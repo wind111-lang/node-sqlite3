@@ -33,7 +33,7 @@ jobs:
             node: 18
             host: x86
             target: x86
-          - os: macos-latest
+          - os: macos-m1
             node: 18
             host: arm64
             target: arm64

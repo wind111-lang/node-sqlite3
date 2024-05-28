@@ -11,7 +11,7 @@ WORKDIR /usr/src/build
 
 COPY . .
 
-RUN npm install --ignore-scripts --maxsockets=1
+RUN npm install --ignore-scripts
 
 ENV CFLAGS="${CFLAGS:-} -include ../src/gcc-preinclude.h"
 ENV CXXFLAGS="${CXXFLAGS:-} -include ../src/gcc-preinclude.h"
